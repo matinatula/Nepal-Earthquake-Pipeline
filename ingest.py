@@ -19,3 +19,5 @@ if response.status_code == 200:
         f.write(json_str)
 else:
     print(f"Error: {response.status_code}")
+
+ingest raw Nepal earthquake data from USGS API"
