@@ -25,7 +25,7 @@ try:
         count = df.isnull().sum()
         print("Null count is: ", count)
         df.index += 1
-        df.to_csv('clean_earthquakes.csv', index_label='S.N.')
+        df.to_csv('clean_earthquakes.csv', index_label='id')
 
 except FileNotFoundError:
     print("Error: The file raw_earthquakes.json was not found. ")

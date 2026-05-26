@@ -1,4 +1,4 @@
-S.N.,time,place,magnitude,longitude,latitude,depth
+id,time,place,magnitude,longitude,latitude,depth
 1,2024-12-28 07:02:12.064,Southern Tibetan Plateau,4.0,86.7157,28.3716,10.0
 2,2024-12-28 06:05:48.771,Southern Tibetan Plateau,4.2,87.0514,28.2962,10.0
 3,2024-12-20 22:29:02.221,"60 km WNW of Jumla, Nepal",5.0,81.6099,29.4923,10.0
