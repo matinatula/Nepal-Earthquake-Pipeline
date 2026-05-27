@@ -21,7 +21,6 @@ url_object = URL.create(
 
 def load_into_database(url_object=url_object):
     engine = create_engine(url_object)
-
     df = pd.read_csv('clean_earthquakes.csv')
     df['time'] = pd.to_datetime(df['time'])
     df.to_sql(name='nepal_earthquakes', con=engine,
