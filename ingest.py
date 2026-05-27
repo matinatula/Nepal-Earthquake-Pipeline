@@ -10,11 +10,9 @@ def ingest_from_api_to_json(url=url,params=params):
     response = requests.get(url, params=params)
     if response.status_code == 200:
         data = json.loads(response.text)  # data -> python dictionary
-        print(
-            f"\nSaved {data['metadata']['count']} earthquakes to raw_earthquakes.json \n")
-
         json_str = json.dumps(data, indent=4, ensure_ascii=False)
         with open("raw_earthquakes.json", "w", encoding="utf-8") as f:
             f.write(json_str)
+        print(f"\nSaved {data['metadata']['count']} earthquakes to raw_earthquakes.json \n")
     else:
         print(f"Error: {response.status_code}")
